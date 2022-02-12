@@ -6,21 +6,26 @@
   box-sizing: border-box;
 }
 
-html{
-  box-shadow: inset 300px 300px 500px rgba(0,0,0,0.6);
+li{
+  list-style: none; 
 }
 
 body{
+  background: black;
+  color: white;
+}
+.container1{
   background: url("./asserts/IN-en-20220131-popsignuptwoweeks-perspective_alpha_website_small.jpg") no-repeat;
   display: flex;
   flex-direction: column;
+  box-shadow: inset 300px 300px 500px rgba(0,0,0,0.6);
 }
-
 .header{
   display: flex;
   justify-content: space-between;
   width: 100%;
   padding: 20px;
+  
 }
 
 .header .header-left .netflix{
@@ -53,7 +58,6 @@ body{
 .main .section1{
   width: 100%;
   height: 500px;
-  color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -71,26 +75,26 @@ body{
   font-size: 30px;
 }
 
-.main .section1 .content{
+.main .section1 .content, .container6 .input .content{
   font-size: 20px;
   text-align: center;
 }
 
-.main .section1 .btn-2{
+.main .section1 .btn-2, .container6 .input .btn-2{
   display: flex;
+  justify-content: center;
 }
 
-.main .section1 .btn-2 .e-mail{
+.main .section1 .btn-2 .e-mail,.container6 .input .btn-2 .e-mail{
   width: 400px;
   padding: 20px 10px;
   color: grey;
 }
 
-.main .section1 .btn-2 .get-started{
+.main .section1 .btn-2 .get-started, .container6 .input .btn-2 .get-started{
   width: 150px;
   padding: 20px 5px;
   background: red;
-  color: white;
 }
 
 .line{
@@ -98,8 +102,7 @@ body{
   background-color: rgb(112, 108, 108);
 }
 
-.container2, .container3{
-  background-color: black;
+.container2, .container3, .container4, .container5{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -107,37 +110,109 @@ body{
   height: 500px;
 }
 
-.left{
+.container2-left, .container3-right, .container4-left, .container5-right{
   width: 50%;
   display: flex;
   flex-direction: column;
-  color: white;
   text-align: center;
   padding: 0px 50px;
   gap: 15px;
 }
 
-.left .h1{
+.container2-left h1, .container3-right h1, .container4-left h1, .container5-right h1{
   width: 100%;
   font-size: 50px;
   text-align: left;
 }
 
-.container2 .left .para{
+.container2 .container2-left p, .container3 .container3-right p, .container4 .container4-left p, .container5-right p{
   font-size: 25px;
   text-align: left;
 }
-
-.right .tv{
-  width: 500px;
+.container2-right, .container3-left, .container4-right, .container5-left{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   position: relative;
 }
-
-.right .tv-image{
-  width: 400px;
-  height: 200px;
-  position: absolute;
-  right: 140px;
-  bottom: -320px;
+.container2-right img, .container4-right img, .container5-left img{
+  width: 65%;
+  height: 50%;
 }
 
+.container2-right video{
+  width: 45%;
+  height: 70%;
+  position: absolute;
+  top: 10%;
+}
+
+.container3-left img{
+  width: 70%;
+}
+
+.container4-right video{
+  width: 40%;
+  height: 40%;
+  position: absolute;
+  top: 10%;
+}
+
+.container6{
+  width: 100%;
+  padding: 30px 0px;
+}
+
+.container6 h1{
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+.questions{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.questions li{
+  list-style: none;
+  padding: 1.5rem 2rem;
+  margin: 5px;
+  font-size: 25px;
+  background: #303030;
+  text-align: left;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container6 .input{
+  margin: 10px;
+  padding: 20px; 
+}
+
+.footer{
+  margin: 5% 20%;
+  color:rgb(112, 108, 108)
+}
+
+.footer p{
+  font-size: 22px;
+  margin: 20px 0px;
+}
+
+.footer .footer-list{
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer .footer-list li{
+  margin: 10px 0px;
+}
+
+.footer a{
+  color:rgb(112, 108, 108);
+  text-decoration: none;
+}
